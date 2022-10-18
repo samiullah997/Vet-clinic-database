@@ -1,6 +1,6 @@
 /* Database schema to keep the structure of entire database. */
 
-CREATE TABLE animals (
+ALTER TABLE animals (
     id int,
     name varchar(100),
     date_of_birth DATE,
