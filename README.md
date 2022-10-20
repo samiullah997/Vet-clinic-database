@@ -14,6 +14,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Screenshots
 
+![screenshot](./images/screen_short_8.png)
+![screenshot](./images/screen_short_9.png)
 ![screenshot](./images/screen_short_1.png)
 ![screenshot](./images/screen_short_2.png)
 ![screenshot](./images/screen_short_3.png)
