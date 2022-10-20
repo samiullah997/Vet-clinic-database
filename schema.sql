@@ -30,3 +30,27 @@ CREATE TABLE species (
     id SERIAL PRIMARY KEY,
     name varchar(100)
 );
+
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name varchar(100),
+    age int,
+    date_of_graduation DATE
+);
+
+CREATE TABLE specializations (
+    id SERIAL PRIMARY KEY,
+    species_id int,
+    vet_id int,
+    CONSTRAINT species_id FOREIGN KEY (species_id) REFERENCES species(id),
+    CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id)
+);
+
+CREATE TABLE visits (
+    id SERIAL PRIMARY KEY,
+    animal_id int,
+    vet_id int,
+    date_of_visit DATE,
+    CONSTRAINT animal_id FOREIGN KEY (animal_id) REFERENCES animals(id),
+    CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id)
+);
