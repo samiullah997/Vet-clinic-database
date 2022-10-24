@@ -26,6 +26,11 @@ CREATE TABLE owners (
     age int
 );
 
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- create index for owners
+CREATE INDEX owners_email_idx ON owners (email);
+
 CREATE TABLE species (
     id SERIAL PRIMARY KEY,
     name varchar(100)
@@ -54,3 +59,7 @@ CREATE TABLE visits (
     CONSTRAINT animal_id FOREIGN KEY (animal_id) REFERENCES animals(id),
     CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id)
 );
+
+-- create index for visits
+CREATE INDEX visits_animal_id_index ON visits (animal_id);
+CREATE INDEX visits_vet_id_index ON visits (vet_id);
