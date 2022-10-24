@@ -34,3 +34,7 @@ SELECT animals.name FROM vets JOIN visits ON visits.vet_id = vets.id JOIN animal
 SELECT animals.name, vets.name, visits.date_of_visit FROM animals JOIN visits ON visits.animal_id = animals.id JOIN vets ON vets.id = visits.vet_id ORDER BY visits.date_of_visit DESC LIMIT 1;
 SELECT COUNT(visits.id) FROM visits JOIN vets ON vets.id = visits.vet_id JOIN animals ON animals.id = visits.animal_id JOIN specializations ON specializations.vet_id = vets.id JOIN species ON species.id = specializations.species_id WHERE species.id != animals.species_id;
 SELECT species.name FROM vets JOIN visits ON visits.vet_id = vets.id JOIN animals ON animals.id = visits.animal_id JOIN specializations ON specializations.vet_id = vets.id JOIN species ON species.id = specializations.species_id WHERE vets.name = 'Maisy Smith' GROUP BY species.name ORDER BY COUNT(species.name) DESC LIMIT 1;
+
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;
+explain analyze SELECT * FROM visits where vet_id = 2;
+explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';

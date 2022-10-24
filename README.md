@@ -1,8 +1,9 @@
+<!-- @format -->
+
 # curriculum-databases-projects-template
 
 > This template should be used for database related projects at Microverse.
 > Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
 
 ## Getting Started
 
@@ -12,30 +13,19 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
-## Screenshots
-
-![screenshot](./images/screen_short_10.png)
-![screenshot](./images/screen_short_11.png)
-![screenshot](./images/screen_short_12.png)
-![screenshot](./images/screen_short_8.png)
-![screenshot](./images/screen_short_9.png)
-![screenshot](./images/screen_short_1.png)
-![screenshot](./images/screen_short_2.png)
-![screenshot](./images/screen_short_3.png)
-![screenshot](./images/screen_short_4.png)
-![screenshot](./images/screen_short_5.png)
-![screenshot](./images/screen_short_6.png)
-![screenshot](./images/screen_short_7.png)
-
-
 ## Authors
 
 👤 **Author Samiullah**
 
-- GitHub: [@githubhandle]([https://github.com/githubhandle](https://github.com/samiullah997))
+- GitHub: [@githubhandle](<[https://github.com/githubhandle](https://github.com/samiullah997)>)
 - Twitter: [@twitterhandle][(https://twitter.com/twitterhandle)](https://twitter.com/samiullahk997)
 - LinkedIn: [LinkedIn][(https://linkedin.com/in/linkedinhandle)](https://www.linkedin.com/in/samiullah-khan-2702b7171/)
 
+👤 **Mohammed Hussen (binhussen)**
+
+- GitHub: [@binhussen](https://github.com/binhussen)
+- Twitter: [@binhussens](https://twitter.com/binhussens)
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/binhussen/)
 
 ## 🤝 Contributing
 
