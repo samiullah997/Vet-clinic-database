@@ -25,6 +25,7 @@ CREATE TABLE invoices (
 -- invoice items table
 CREATE TABLE invoice_items (
     id SERIAL NOT NULL PRIMARY KEY,
+    quantity DECIMAL NOT NULL,
     invoice_id INT NOT NULL,
     treatment_id INT NOT NULL,
     unit_price DECIMAL(10,2) NOT NULL,
