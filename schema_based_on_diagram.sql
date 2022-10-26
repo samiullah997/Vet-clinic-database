@@ -43,8 +43,8 @@ CREATE TABLE treatments (
 
 -- Many-to-many relationship
 CREATE TABLE medial_treatments (
-	medical_history_id INTEGER REFERENCES medical_histories(id),
-	treatment_id INTEGER REFERENCES treatments(id)
+     medical_history_id INTEGER REFERENCES medical_histories(id),
+     treatment_id INTEGER REFERENCES treatments(id)
 );
 
 -- Indexes
